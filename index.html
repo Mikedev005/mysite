@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="#">My Website</a></h1>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome to my website</h1>
+        <p>Hello, I am Michael. A front end web developer.</p>
+      </div>
+    </div>
+
+    <section class="portfolio" id="portfolio">
+      <div class="heading">
+        <h1>Here are some of my past projects</h1>
+      </div>
+      <div class="row flex">
+        <div class="first-image">
+          <div class="image-container">
+            <img height="400" src="lekan.png" alt="" />
+          </div>
+        </div>
+        <div class="about-image">
+          <p>
+            Here is an app that movie lovers will enjoy using to search for
+            their favorite films, view detailed information about them, and
+            organize their watchlists. Click the button to view
+          </p>
+          <button>
+            <a target="_blank" href="https://mikedev005.github.io/moviesapp/"
+              >Click Me</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="row-reverse">
+        <div class="first-image">
+          <div class="image-container">
+            <img height="400" src="dog,.png" alt="" />
+          </div>
+        </div>
+        <div class="about-image">
+          <p>
+            Here is an app that movie lovers will enjoy using to search for
+            their favorite films, view detailed information about them, and
+            organize their watchlists. Click the button to view
+          </p>
+          <button>
+            <a href="https://mikedev005.github.io/edgeledger/">Click Me</a>
+          </button>
+        </div>
+      </div>
+      <div class="row flex">
+        <div class="first-image">
+          <div class="image-container">
+            <img height="400" src="hotel.png" alt="" />
+          </div>
+        </div>
+        <div class="about-image">
+          <p>
+            Here is an app that movie lovers will enjoy using to search for
+            their favorite films, view detailed information about them, and
+            organize their watchlists. Click the button to view
+          </p>
+          <button>
+            <a href="https://mikedev005.github.io/hotel/">Click Me</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="form-section" id="Contact">
+      <div class="form">
+        <form method="post" action="https://formspree.io/f/xvonwrby">
+          <div class="form-class">
+            <label for="Name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-class">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-class">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input class="submit" type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

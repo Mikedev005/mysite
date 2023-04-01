@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+  background-color: #555;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: url("pexels-lukas-574073.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  z-index: -2;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.content h2,
+.content h3 {
+  margin: 20px 0;
+  font-size: 150%;
+}
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+/* NavBar styling */
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.nav.active {
+  background-color: aliceblue;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.nav.active a {
+  color: black;
+}
+.nav.active .container {
+  padding: 10px 0;
+}
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+.portfolio {
+  background-color: #222;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  gap: 3px;
+}
+.first-image,
+.second-image {
+  width: 50%;
+}
+
+.image-container {
+  /* set the size of the div */
+  width: 100%;
+  height: 400px;
+
+  /* position the div and its contents */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  /* position the image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+
+  /* center and scale the image */
+  object-fit: cover;
+  object-position: center center;
+}
+.about-image {
+  background-color: green;
+  width: 50%;
+  padding: 20px;
+  color: white;
+}
+.about-image button {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40px;
+  background-color: #222;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+}
+.about-image button:hover {
+  cursor: pointer;
+  background-color: #555;
+}
+.heading {
+  position: relative;
+  height: 200px;
+  background: url("stock.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.heading h1 {
+  font-size: 2.5rem;
+  z-index: 2;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  gap: 3px;
+}
+.form-section {
+  background-color: rgb(30, 30, 131);
+  height: 500px;
+}
+.form {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.form-class input,
+.form-class label {
+  display: block;
+}
+.form-class input,
+.form-class textarea {
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-class {
+  margin-bottom: 20px;
+}
+.form-class input {
+  height: 40px;
+  padding: 10px;
+}
+.form-class input:focus,
+.form-class textarea:focus {
+  outline: blue;
+}
+label {
+  color: white;
+}
+.submit {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+}
+.submit:hover {
+  background-color: rgb(72, 165, 72);
+  cursor: pointer;
+}
+textarea {
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
